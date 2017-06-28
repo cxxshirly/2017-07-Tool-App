@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.xu.xinxin2017summer.DialogActivity">
+
+    <RadioGroup
+        android:id="@+id/activity_dialog_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/activity_dialog_radiobutton1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:text="NormalDialog"/>
+
+        <RadioButton
+            android:id="@+id/activity_dialog_radiobutton2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:text="ListDialog"/>
+        <RadioButton
+            android:id="@+id/activity_dialog_radiobutton3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:text="SingleChoiceDialog"/>
+        <RadioButton
+            android:id="@+id/activity_dialog_radiobutton4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:text="MultiChoiceDialog"/>
+        <RadioButton
+            android:id="@+id/activity_dialog_radiobutton5"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:text="WaitingDialog"/>
+        <RadioButton
+            android:id="@+id/activity_dialog_radiobutton6"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:text="ProgressDialog"/>
+        <RadioButton
+            android:id="@+id/activity_dialog_radiobutton7"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:text="inputDialog"/>
+
+        <RadioButton
+            android:id="@+id/activity_dialog_radiobutton8"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:text="CustomDialog"/>
+
+        <Button
+            android:id="@+id/activity_dialog_ok"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="OK" />
+
+    </RadioGroup>
+
+</LinearLayout>
