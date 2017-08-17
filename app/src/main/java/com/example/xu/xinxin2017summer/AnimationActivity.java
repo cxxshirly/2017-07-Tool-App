@@ -61,7 +61,7 @@ public class AnimationActivity extends BaseActivity {
         setContentView(R.layout.activity_animation);
         ButterKnife.bind(this);
         intialAnimation();
-        tv.setOnClickListener(new View.OnClickListener(){
+        textView.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 shortToast("You clicked TextView");

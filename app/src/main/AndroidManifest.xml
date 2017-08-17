@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.xu.xinxin2017summer">
 
+    <provider
+        android:name=".content.Provider"
+        android:authorities="com.example.xu.xinxin2017summer"
+        android:exported="true" />
+
     <application
         android:name=".XinxinApplication"
         android:allowBackup="true"
@@ -43,7 +48,18 @@
         <activity android:name=".DialogActivity" />
         <activity android:name=".HandlerActivity" />
         <activity android:name=".RunableHandlerActivity" />
-        <activity android:name=".AnimationActivity"></activity>
+        <activity android:name=".AnimationActivity" />
+        <activity android:name=".AnimatorActivity" />
+        <activity android:name=".GestureActivity" />
+        <activity android:name=".SharedPreferenceActivity" />
+        <activity android:name=".ServiceActivity" />
+        <activity android:name=".QuizActivity" />
+        <activity android:name=".QuizDemoActivity" />
+        <activity android:name=".TestAudioActivity" />
+
+        <service android:name=".service.TestService" />
+
+        <activity android:name=".Quiz5Activity"></activity>
     </application>
 
 </manifest>

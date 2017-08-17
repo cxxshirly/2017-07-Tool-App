@@ -3,35 +3,51 @@ package com.example.xu.xinxin2017summer.fragment;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import com.example.xu.xinxin2017summer.ActivityA;
 import com.example.xu.xinxin2017summer.AdvanceListViewActivity;
 import com.example.xu.xinxin2017summer.AdvanceViewPagerActivity;
 import com.example.xu.xinxin2017summer.AnimationActivity;
+import com.example.xu.xinxin2017summer.AnimatorActivity;
 import com.example.xu.xinxin2017summer.CheckBoxActivity;
 import com.example.xu.xinxin2017summer.DialogActivity;
+import com.example.xu.xinxin2017summer.GestureActivity;
 import com.example.xu.xinxin2017summer.HandlerActivity;
 import com.example.xu.xinxin2017summer.HandlerActivity2;
 import com.example.xu.xinxin2017summer.NinePatchActivity;
+import com.example.xu.xinxin2017summer.Quiz5Activity;
+import com.example.xu.xinxin2017summer.QuizDemoActivity;
 import com.example.xu.xinxin2017summer.R;
 import com.example.xu.xinxin2017summer.RadioGroupActivity;
 import com.example.xu.xinxin2017summer.ResultActivity;
 import com.example.xu.xinxin2017summer.RunableHandlerActivity;
 import com.example.xu.xinxin2017summer.ScaleTypeActivity;
+import com.example.xu.xinxin2017summer.ServiceActivity;
+import com.example.xu.xinxin2017summer.SharedPreferenceActivity;
 import com.example.xu.xinxin2017summer.ViewPagerActivity;
 import com.example.xu.xinxin2017summer.adapter.ListNormalAdapter;
 import com.example.xu.xinxin2017summer.NotificationActivity;
 import com.example.xu.xinxin2017summer.audio.BaseBean;
+import com.example.xu.xinxin2017summer.dialog.CustomDialog;
+import com.example.xu.xinxin2017summer.dialog.QuizDialog;
 
 
 import java.util.ArrayList;
+
+import butterknife.BindView;
+import butterknife.OnClick;
 
 
 public class DemoFragment extends Fragment {
@@ -58,9 +74,13 @@ public class DemoFragment extends Fragment {
         contentList.add("Handler");
         contentList.add("RunnableHandler");
         contentList.add("Animation");
-        contentList.add("w");
-        contentList.add("w");
-
+        contentList.add("Animator");
+        contentList.add("Gesture");
+        contentList.add("SharedPreference");
+        contentList.add("Service&Broadcast");
+        contentList.add("Quiz3");
+        contentList.add("Quiz5");
+        contentList.add("TestAudioPlayer");
 
 
     }
@@ -166,11 +186,48 @@ public class DemoFragment extends Fragment {
                         //animation
                         Intent intent13 = new Intent(getActivity(), AnimationActivity.class);
                         startActivity(intent13);
+                        break;
+                    case 14:
+                        //animator
+                        Intent intent14 = new Intent(getActivity(), AnimatorActivity.class);
+                        startActivity(intent14);
+                        break;
+                    case 15:
+                        //gesture
+                        Intent intent15 = new Intent(getActivity(), GestureActivity.class);
+                        startActivity(intent15);
+                        break;
+                    case 16:
+                        //shareprefence
+                        Intent intent16 = new Intent(getActivity(),SharedPreferenceActivity.class);
+                        startActivity(intent16);
+                        break;
+                    case 17:
+                        //Service and broadcast
+                        Intent intent17 = new Intent(getActivity(),ServiceActivity.class);
+                        startActivity(intent17);
+                        break;
+                    case 18:
+                        //Quiz3
+                        Intent intent18 = new Intent(getActivity(),QuizDemoActivity.class);
+                        startActivity(intent18);
+                        break;
+                    case 19:
+                        //
+                        Intent intent19 = new Intent(getActivity(),Quiz5Activity.class);
+                        startActivity(intent19);
+                        break;
+
+
                         default:
                 }
             }
         });
         return view;
     }
+
+
+
+
 
 }
